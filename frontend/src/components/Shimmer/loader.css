@@ -1,0 +1,43 @@
+@import 'tailwindcss/base';
+
+@layer base {
+  body {
+    @apply bg-white text-gray-800;
+  }
+}
+
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.border-blue-500 {
+  border-color: #3b82f6;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
